@@ -1,0 +1,64 @@
+{
+  "name": "@omer-x/next-swagger-jsdoc",
+  "version": "0.1.0",
+  "description": "a Next.js plugin to generate Swagger documentation using JSDoc annotations",
+  "keywords": [
+    "next.js",
+    "swagger",
+    "openapi",
+    "jsdoc",
+    "swagger.json",
+    "generator"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/omermecitoglu/next-swagger-jsdoc.git"
+  },
+  "bugs": {
+    "url": "https://github.com/omermecitoglu/next-swagger-jsdoc/issues"
+  },
+  "homepage": "https://github.com/omermecitoglu/next-swagger-jsdoc#readme",
+  "private": false,
+  "publishConfig": {
+    "access": "public"
+  },
+  "author": {
+    "name": "Omer Mecitoglu",
+    "email": "omer.mecitoglu@gmail.com",
+    "url": "https://omermecitoglu.github.io"
+  },
+  "license": "MIT",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    },
+    "./ReactSwagger": {
+      "import": "./dist/ReactSwagger.js",
+      "types": "./dist/ReactSwagger.d.ts"
+    }
+  },
+  "files": [
+    "dist/"
+  ],
+  "scripts": {
+    "build": "tsc"
+  },
+  "dependencies": {
+    "@omer-x/package-metadata": "^0.1.0",
+    "swagger-jsdoc": "^6.2.8",
+    "swagger-ui-react": "^5.12.3"
+  },
+  "peerDependencies": {
+    "react": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.73",
+    "@types/swagger-jsdoc": "^6.0.4",
+    "@types/swagger-ui-react": "^4.18.3",
+    "typescript": "^5.4.3"
+  }
+}
