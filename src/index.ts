@@ -1,8 +1,7 @@
 import getPackageMetadata from "@omer-x/package-metadata";
 import swaggerJsdoc from "swagger-jsdoc";
-export * as ReactSwagger from "./ReactSwagger"
 
-export const generateApiDocs = (source: string[] | string) => {
+const generateApiDocs = (source: string[] | string) => {
   source = Array.isArray(source) ? source : [source]
   const metadata = getPackageMetadata();
   const spec = swaggerJsdoc({
